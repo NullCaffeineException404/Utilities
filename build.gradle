@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // Apache POI for Excel handling
+    implementation("org.apache.poi:poi:5.2.3")
+    implementation("org.apache.poi:poi-ooxml:5.2.3")
+
+    // JSON.org (minimal JSON handling)
+    implementation("org.json:json:20231013")
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+    implementation 'com.deepoove:poi-tl:1.12.1' // Templating engine for Excel
+    implementation 'com.jayway.jsonpath:json-path:2.8.0' // For JSON path queries
+    // Add logging implementations to silence warnings
+    implementation 'org.apache.logging.log4j:log4j-core:2.20.0'
+    implementation 'org.slf4j:slf4j-simple:2.0.7'
+}
