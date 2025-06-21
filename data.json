@@ -1,0 +1,56 @@
+{
+  "company": "TechCorp",
+  "founded": 2010,
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "position": "Software Engineer",
+      "skills": ["Python", "JavaScript", "SQL"],
+      "contact": {
+        "email": "john@techcorp.com",
+        "phone": "555-0101"
+      },
+      "projects": [
+        {
+          "name": "Project Alpha",
+          "status": "completed",
+          "contributors": 5
+        },
+        {
+          "name": "Project Beta",
+          "status": "in progress",
+          "contributors": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "position": "Data Scientist",
+      "skills": ["Python", "R", "Machine Learning"],
+      "contact": {
+        "email": "jane@techcorp.com",
+        "phone": "555-0102"
+      },
+      "projects": [
+        {
+          "name": "Project Gamma",
+          "status": "in progress",
+          "contributors": 8
+        }
+      ]
+    }
+  ],
+  "departments": {
+    "engineering": {
+      "head": "Mark Johnson",
+      "size": 15
+    },
+    "data_science": {
+      "head": "Sarah Williams",
+      "size": 8
+    }
+  },
+  "locations": ["New York", "San Francisco", "Austin"]
+}
