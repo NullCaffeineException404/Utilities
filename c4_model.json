@@ -1,0 +1,19 @@
+{
+  "containers": [
+    {
+      "name": "WebApp",
+      "type": "frontend",
+      "depends_on": ["API"]
+    },
+    {
+      "name": "API",
+      "type": "backend",
+      "depends_on": ["Database"]
+    },
+    {
+      "name": "Database",
+      "type": "mongodb",
+      "depends_on": []
+    }
+  ]
+}
